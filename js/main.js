@@ -1,17 +1,6 @@
 console.log("Little Debbies are Delicious");
+import makeSweet from './sweetFactory.js';
 
-const makeSweet = (name, quantity, desc, shapeId, typeId, seasonId) => {
-	const newSweet = {
-		name: name,
-		quantity: quantity,
-		desc: desc,
-		shapeId: shapeId,
-		typeId: typeId,
-		seasonId: seasonId
-	}
-
-	return newSweet;
-}
 
 // (name, quantity, desc, shapeId, typeId, seasonId)
 const newSweet1 = makeSweet("Happy Camper Cake", 5, "Green Pine trees with chocolate", 1, 2, 3);
