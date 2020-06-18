@@ -15,6 +15,7 @@ console.log("this is the second sweet", newSweet2);
 // go get all the data
 const allSweets = () => {
 	// API is an object that has multiple methods for interacting with the DB
+	//GET
 	API.getAllSweets()
 	.then((sweets) => {
 		// API.getAllSweets returns data, in this case an array
@@ -29,8 +30,18 @@ const allSweets = () => {
 const newSweet3 = makeSweet("Christmas In December 31", 5, "White Christmas Tree with Santa on the Package", 1, 2, 3);
 
 //invoke the addASweet method and pass it the newSweet3 object
+//POST
 API.addASweet(newSweet3)
 .then(() => {
 	//Once the new sweet has been added to the DB, go get all the data again.
 	allSweets();
 });
+
+const allTypes = () => {
+	API.getAllTypes()
+	.then((typeArray) => { 
+		console.log("All the tpyes:", typeArray)
+	});
+}
+
+allTypes();

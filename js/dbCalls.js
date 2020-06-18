@@ -14,6 +14,18 @@ const API = {
 			body: JSON.stringify(sweetObj)
 		}).then(response => response.json());
 
+	},
+	getAllSeasons : () => {
+		return fetch(`${url}/seasons`)
+		.then(response => response.json());
+	},
+	getAllTypes : () => {
+		return fetch(`${url}/types`)
+		.then(response => response.json());
+	},
+	getAllShapes : () => {
+		return fetch(`${url}/shapes`)
+		.then(response => response.json());
 	}
 }
 
