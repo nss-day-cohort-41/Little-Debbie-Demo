@@ -1,5 +1,5 @@
 {
-	"type":[
+	"types":[
 		{
 			"id": 1,
 			"name": "Brownie"
@@ -9,7 +9,7 @@
 			"name": "Cake"
 		}
 	],
-	"season": [
+	"seasons": [
 		{
 			"id": 1,
 			"name": "Christmas"
@@ -23,7 +23,7 @@
 			"name": "Summer"
 		}
 	],
-	"shape": [
+	"shapes": [
 		{
 			"id": 1,
 			"name": "Tree"
