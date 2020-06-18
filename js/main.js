@@ -1,6 +1,7 @@
 console.log("Little Debbies are Delicious");
 import makeSweet from './sweetFactory.js';
 import API from './dbCalls.js';
+import makeSweetList from './sweetList.js';
 
 
 // (name, quantity, desc, shapeId, typeId, seasonId)
@@ -27,15 +28,15 @@ const allSweets = () => {
 // allSweets();
 
 // using the makeSweet factory function, make a sweet object
-const newSweet3 = makeSweet("Christmas In December 31", 5, "White Christmas Tree with Santa on the Package", 1, 2, 3);
+const newSweet3 = makeSweet("Easter Egg Brownie", 6, "Yellow decoration with stripes", 2, 2, 1);
 
 //invoke the addASweet method and pass it the newSweet3 object
 //POST
-API.addASweet(newSweet3)
-.then(() => {
-	//Once the new sweet has been added to the DB, go get all the data again.
-	allSweets();
-});
+// API.addASweet(newSweet3)
+// .then(() => {
+// 	//Once the new sweet has been added to the DB, go get all the data again.
+// 	allSweets();
+// });
 
 const allTypes = () => {
 	API.getAllTypes()
@@ -45,3 +46,5 @@ const allTypes = () => {
 }
 
 allTypes();
+
+makeSweetList();

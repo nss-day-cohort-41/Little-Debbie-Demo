@@ -62,7 +62,7 @@
       "id": 3
     },
     {
-      "name": "Christmas In July 2",
+      "name": "Christmas In December 31",
       "quantity": 5,
       "desc": "White Christmas Tree with Santa on the Package",
       "shapeId": 1,
@@ -71,103 +71,13 @@
       "id": 4
     },
     {
-      "name": "Christmas In July 4",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
+      "name": "Easter Egg Brownie",
+      "quantity": 6,
+      "desc": "Yellow decoration with stripes",
+      "shapeId": 2,
+      "typeId": 1,
       "seasonId": 3,
       "id": 5
-    },
-    {
-      "name": "Christmas In July 14",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 7
-    },
-    {
-      "name": "Christmas In September",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 8
-    },
-    {
-      "name": "Christmas In December",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 9
-    },
-    {
-      "name": "Christmas In December 25",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 10
-    },
-    {
-      "name": "Christmas In December 25",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 11
-    },
-    {
-      "name": "Christmas In December 31",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 12
-    },
-    {
-      "name": "Christmas In December 31",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 13
-    },
-    {
-      "name": "Christmas In December 31",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 14
-    },
-    {
-      "name": "Christmas In December 31",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 15
-    },
-    {
-      "name": "Christmas In December 31",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 16
     }
   ]
 }
