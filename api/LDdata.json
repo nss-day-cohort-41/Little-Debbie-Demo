@@ -60,24 +60,6 @@
       "typeId": 2,
       "seasonId": 3,
       "id": 3
-    },
-    {
-      "name": "Christmas In December 31",
-      "quantity": 5,
-      "desc": "White Christmas Tree with Santa on the Package",
-      "shapeId": 1,
-      "typeId": 2,
-      "seasonId": 3,
-      "id": 4
-    },
-    {
-      "name": "Easter Egg Brownie",
-      "quantity": 6,
-      "desc": "Yellow decoration with stripes",
-      "shapeId": 2,
-      "typeId": 1,
-      "seasonId": 3,
-      "id": 5
     }
   ]
 }

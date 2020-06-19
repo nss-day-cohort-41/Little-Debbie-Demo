@@ -15,6 +15,11 @@ const API = {
 		}).then(response => response.json());
 
 	},
+	deleteSweet: (id) => {
+		return fetch(`${url}/sweet/${id}`, {
+			method: "DELETE"
+		}).then(response => response.json());
+	},
 	getAllSeasons : () => {
 		return fetch(`${url}/seasons`)
 		.then(response => response.json());

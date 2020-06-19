@@ -3,6 +3,7 @@
 
 import API from './dbCalls.js';
 import makeSweetHTML from './sweetDOM.js';
+import registerDeleteListener from './events.js';
 
 
 const sweetContainer = document.querySelector("#sweetContainer");
@@ -15,6 +16,8 @@ const makeSweetList = () => {
 		const brownies = sweetsArray.filter( item => {
 			return item.typeId === 1;
 		});
+
+		/////array method examples
 
 		const allSweetNames = sweetsArray.map(item => {
 			const htmlComponent = `<p>${item.name}</p>`
@@ -39,9 +42,21 @@ const makeSweetList = () => {
 		// put them on the dom
 		console.log("brownies", brownies);
 		
-		brownies.forEach(item => {
-			sweetContainer.innerHTML += makeSweetHTML(item);
-		})
+		// brownies.forEach(item => {
+		// 	sweetContainer.innerHTML += makeSweetHTML(item);
+		// })
+
+
+		//loop through the sweetsArray and display on the dom
+		sweetsArray.forEach(item => {
+				sweetContainer.innerHTML += makeSweetHTML(item);
+				
+			});
+
+		//invoke the register delete functionality to add to each item in the list
+		registerDeleteListener.registerDeleteListener();
+		
+		
 	})
 
 }
