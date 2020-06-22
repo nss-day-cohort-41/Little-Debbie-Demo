@@ -6,6 +6,7 @@ const makeSweetHTML = ( sweetObj ) => {
 	<p>${sweetObj.shapeId}</p>
 	<p>${sweetObj.quantity}</p>
 	<p>${sweetObj.desc}</p>
+	<button id="editSweet--${sweetObj.id}">Edit</button>
 	<button id="deleteSweet--${sweetObj.id}">Delete</button>
 	</div>
 	`

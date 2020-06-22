@@ -5,3 +5,7 @@ body {
 .sweetCard {
 	border: .2em solid black;
 }
+
+main {
+	display: flex;
+}

@@ -15,6 +15,19 @@ const API = {
 		}).then(response => response.json());
 
 	},
+	getSingleSweet: (id) => {
+		return fetch(`${url}/sweet/${id}`)
+		.then(response => response.json());
+	},
+	updateSweet: (id, updatedSweetObj) => {
+		return fetch(`${url}/sweet/${id}`, {
+			method: "PUT",
+        	headers: {
+            "Content-Type": "application/json"
+        	},
+        	body: JSON.stringify(updatedSweetObj)
+		})
+	},
 	deleteSweet: (id) => {
 		return fetch(`${url}/sweet/${id}`, {
 			method: "DELETE"

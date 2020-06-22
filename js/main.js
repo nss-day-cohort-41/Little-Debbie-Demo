@@ -48,3 +48,35 @@ const allTypes = () => {
 allTypes();
 
 makeSweetList();
+
+const clearInputs = () => {
+	document.querySelector("#sweetId").value = "";
+	document.querySelector("#sweetName").value = "";
+	document.querySelector("#sweetDesc").value = "";
+	document.querySelector("#sweetType").value = "";
+	document.querySelector("#sweetShape").value = "";
+	document.querySelector("#sweetSeason").value = "";
+	document.querySelector("#sweetQuantity").value = "";
+}
+
+saveSweetButton.addEventListener("click", event => {
+    const hiddenSweetId = document.querySelector("#sweetId");
+
+    if (hiddenSweetId.value !== "") {
+		const sweetNameInput = document.querySelector("#sweetName").value;
+		const sweetQuantityInput = document.querySelector("#sweetQuantity").value;
+		const sweetDescInput = document.querySelector("#sweetDesc").value;
+		const sweetTypeInput = document.querySelector("#sweetType").value;
+		const sweetShapeInput = document.querySelector("#sweetShape").value;
+		const sweetSeasonInput = document.querySelector("#sweetSeason").value;
+		//(name, quantity, desc, shapeId, typeId, seasonId)
+		API.updateSweet(hiddenSweetId.value, makeSweet(sweetNameInput,sweetQuantityInput, sweetDescInput, sweetShapeInput, sweetTypeInput, sweetSeasonInput))
+		.then(() => {
+			clearInputs();
+			makeSweetList();
+		});
+    } else {
+		// Save functionality goes here
+		console.log("this is the save a new one functionality");
+    }
+});

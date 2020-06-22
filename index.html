@@ -11,8 +11,36 @@
 
 	<main>
 		<div id="sweetContainer">
-			
 		</div>
+		<section id="sweetForm">
+			<form>
+				<input type="hidden" id="sweetId" value="" />
+				<fieldset class="fieldset">
+					<label for="sweetName">Name</label>
+					<input type="text" name="sweetName" id="sweetName">
+				</fieldset>
+				<fieldset class="fieldset">
+					<label for="sweetQuantity">Quantity</label>
+					<input type="text" name="sweetQuantity" id="sweetQuantity">
+				</fieldset><fieldset class="fieldset">
+					<label for="sweetShape">Shape</label>
+					<input type="text" name="sweetShape" id="sweetShape">
+				</fieldset><fieldset class="fieldset">
+					<label for="sweetSeason">Season</label>
+					<input type="text" name="sweetSeason" id="sweetSeason">
+				</fieldset><fieldset class="fieldset">
+					<label for="sweetType">Type</label>
+					<input type="text" name="sweetType" id="sweetType">
+				</fieldset>
+				<fieldset class="fieldset">
+					<label for="sweetDesc">Description</label>
+					<textarea type="text" name="sweetDesc" id="sweetDesc"></textarea>
+				</fieldset>
+			</form>
+			<button id="saveSweetButton">Save Sweet</button>
+		</section>
+
+		
 	</main>
 	
 	<script type="module" src="js/main.js"></script>
