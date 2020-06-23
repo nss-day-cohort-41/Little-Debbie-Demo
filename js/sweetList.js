@@ -13,9 +13,9 @@ const makeSweetList = () => {
 	API.getAllSweets()
 	.then((sweetsArray) => {
 		//can i get just the brownies?
-		const brownies = sweetsArray.filter( item => {
-			return item.typeId === 1;
-		});
+		// const brownies = sweetsArray.filter( item => {
+		// 	return item.typeId === 1;
+		// });
 
 		/////array method examples
 
@@ -24,12 +24,12 @@ const makeSweetList = () => {
 			return htmlComponent;
 		});
 
-		console.log("all names", allSweetNames);
-		sweetContainer.innerHTML += allSweetNames.join("");
+		// console.log("all names", allSweetNames);
+		// sweetContainer.innerHTML += allSweetNames.join("");
 
-		const firstBrownie = sweetsArray.find(item => {
-			return item.typeId === 2;
-		})
+		// const firstBrownie = sweetsArray.find(item => {
+		// 	return item.typeId === 2;
+		// })
 
 		// const firstTree = sweetsArray.find(item => {
 		// 	return item.desc.includes("Tree");

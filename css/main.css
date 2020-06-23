@@ -1,11 +1,42 @@
+@import 'test.css';
+
+:root {
+	--primary: #605E5E;
+	--secondary: #207EA9;
+	--teriary: #FDD19E;
+	--accent: #32BDFD;
+	--generic-lite: #FFFFFF;
+	--generic-dark: #000000;
+	--link: orange;
+	--border-radius: 5px;
+	--div-padding: 2em;
+}
+
 body {
-	background-color: aqua;
+	background-color: var(--primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--teriary);
 }
 
 .sweetCard {
 	border: .2em solid black;
+	background-color: var(--secondary);
 }
 
 main {
 	display: flex;
+}
+
+#sweetForm {
+	background-color: var(--accent);
+}
+#sweetForm h3 {
+	color: var(--generic-dark);
+}
+
+fieldset {
+	border-color: var(--generic-lite);
+	border-width: 1px;
 }
