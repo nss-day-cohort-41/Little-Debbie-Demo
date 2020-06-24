@@ -33,23 +33,23 @@
       "name": "Double Diamond"
     }
   ],
-  "sweet": [
+  "sweets": [
     {
       "name": "Football Brownies",
-      "quantity": "5",
+      "quantity": 5,
       "desc": "Looks like a football and it is brown and it is from the superbowl and I love it more than anything else.",
-      "shapeId": "2",
-      "typeId": "1",
-      "seasonId": "2",
+      "shapeId": 2,
+      "typeId": 1,
+      "seasonId": 2,
       "id": 1
     },
     {
       "name": "Happy Camper Cake",
-      "quantity": "6",
+      "quantity": 6,
       "desc": "Green Like a Pine Tree and smells like christmas and such",
-      "shapeId": "1",
-      "typeId": "2",
-      "seasonId": "3",
+      "shapeId": 1,
+      "typeId": 2,
+      "seasonId": 3,
       "id": 2
     },
     {

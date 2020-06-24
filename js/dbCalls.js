@@ -2,7 +2,7 @@ const url = "http://localhost:3000";
 
 const API = {
 	getAllSweets: () => {
-		return fetch(`${url}/sweet`)
+		return fetch(`${url}/sweet/?_expand=shape&_expand=season&_expand=type`)
 		.then(response => response.json());
 	},
 	addASweet: (sweetObj) => {
