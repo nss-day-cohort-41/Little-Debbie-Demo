@@ -80,3 +80,35 @@ saveSweetButton.addEventListener("click", event => {
 		console.log("this is the save a new one functionality");
     }
 });
+const sweetContainer2 = document.querySelector("#sweetContainer2");
+
+// use of .values
+const allSweetsForObjMethods = () => {
+	API.getAllSweets()
+	.then((sweetArray) => { 
+
+		
+		//example using keys and values
+		// sweetArray.forEach(sweet => {
+		// 	for (const key of Object.keys(sweet)) {
+		// 		sweetContainer2.innerHTML += `<div>${key}</div>`
+		// 	  }
+		// 	for (const value of Object.values(sweet)){
+		// 		console.log("object value", value);
+		// 		sweetContainer2.innerHTML += `<p>${value}</p>`
+		// 	}
+		// })
+
+		//example using entry
+		sweetArray.forEach(sweet => {
+			sweetContainer2.innerHTML += "<hr/>"
+		
+			for (const entry of Object.entries(sweet)) {
+				console.log("entry:", entry);
+				sweetContainer2.innerHTML += `<div><strong>${entry[0]}:</strong> ${entry[1]}</div>`
+			}
+		})
+	});
+}
+
+allSweetsForObjMethods();
